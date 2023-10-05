@@ -2,211 +2,161 @@
 <html lang="en">
 <head>
   <style>
-    .button {
-      background-color: white;
-      color: pink;
-      border: 2px solid pink;
-      border-radius: 30px;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-bottom: 10px;
-      padding-top: 10px; 
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      
-    }
-
-    .button2 {
-      background-color: pink;
-      color: white;
-      border: 2px solid pink;
-      border-radius: 30px;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      
-    }
-
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .content-center1 {
-    display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center; 
-      margin: 0;
-  }
-
-  .content.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px;
-    align-items: center;
-  }
-
-  .content-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-  }
-
-  .order-1 {
-    order:  1;
-  }
-
-  .order-2 {
-    order: 2;
-  }
-  
+   
   </style>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Huddle landing page Test Mode</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
   <header>
-    
-      <div>
-        <img src="./images/logo.svg" alt="logo" width="100" height="48">
-      </div>
-      <a href="#" class="button">Try it Free</a>
+    <div>
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <a href="#" class="button">Try it Free</a>
   </header>
 
   <div class="content-center">
     <div class="build-title">
       <div class="build">
         <h1>Build The Community Your Fans Will Love</h1>
+      </div>
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. 
+        Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <a href="#" class="button2">Get Started For Free</a>
     </div>
-
-  <p> 
-    Huddle re-imagines the way we build communities. You have a voice, but so does 
-    your audience. 
-    Create connections with your users as you engage in genuine discussion. 
-   </p>
-   <a href="#" class="button2">Get Started For Free</a>
-  </div>
   </div>
 
-  <div class ="illustration">
+  <div class="illustration-container">
     <img src="./images/screen-mockups.svg" alt="">
   </div>
   
-<p>
-  <div>
+  <p>
     <div class="content-1">
-
-  <img src="./images/icon-communities.svg" alt="">
-  <h2>1.4k+</h2>
-  <p>Communities Formed</p>
-  </div>
-
-  <div>
-    <img src="./images/icon-messages.svg" alt="" />
-    <h2>2.7m+</h2>
-    <p>Messages Sent</p>
+      <div class="icon-text">
+        <img src="./images/icon-communities.svg" alt="">
+        <h2>1.4k+</h2>
+        <p>Communities Formed</p>
+      </div>
+      <div class="icon-text">
+        <img src="./images/icon-messages.svg" alt="" />
+        <h2>2.7m+</h2>
+        <p>Messages Sent</p>
+      </div>
     </div>
-  </div>
+  </p>
   
-
-</p>
-  
-
-
-
-<article>
   <picture>
     <source
-    media="(min-width: 10000px)"
-    srcset="./images/bg-section-top-desktop-1"
-    />
-  <img src="./images/bg-section-top-desktop-1.svg" alt="" />
-</picture>
-<div>
+      media="(min-width: 1080px)"
+      srcset="./images/bg-footer-top-desktop.svg"
+      alt="" class="w-full" />
+    <img src="./images/bg-section-top-desktop-1.svg" alt="" />
+  </picture>
+
   <article>
-  <h2>Grow Together</h2>
-  <p>
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form.
-</p>
+    <div class="bg-section-container">
+      <article class="grow-together-container">
+        <div class="grow-together-text">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+        <img src="./images/illustration-grow-together.svg" alt="">
+      </article>
+    </div>
   </article>
-    <img src="./images/illustration-grow-together.svg" alt="">
-  </div>
-</article>
 
-<article>
-  <div>
-    <article>
-      <h2>Flowing Conversations</h2>
-      <p>
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-      </p>
-    </article>
+  <article>
+    <article class="flow-conversations-container">
       <img src="./images/illustration-flowing-conversation.svg" alt="">
-  </div>
-</article>
-
-
-<article>
-  <div>
-    <article></article>
-      <h2>Your Users</h2>
-      <p>
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-      </p>
+      <div class="flow-conversations-text">
+        <h2>Flowing Conversations</h2>
+        <p>
+          You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+          just-in-time loading for a more natural flow.
+        </p>
+      </div>
     </article>
-     <img src="./images/illustration-your-users.svg" alt="">
+  </article>
+
+  <article>
+    <article class="your-users-container">
+      <div class="your-users-text">
+        <h2>Your Users</h2>
+        <p>
+          It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+          once signed in to your app, your users can start chatting immediately.
+        </p>
+      </div>
+      <img src="./images/illustration-your-users.svg" alt="">
+    </article>
+  </article>  
+
+  <article></article>
+  <div class="ready-to-build-container">
+    <h2 class="dark-turquoise-text">Ready To Build Your Community?</h2>
+    <a href="#" class="button2">Get Started For Free</a>
   </div>
-</article>  
 
-<article></article>
-  <h2>Ready To Build Your Community?</h2>
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
+</article>
   
-  Phone: +1-543-123-4567
-  example@huddle.com
+<footer>
+  <article>
+    <picture>
+      <source
+        media="(min-width: 1080px)"
+        srcset="./images/bg-footer-top-desktop.svg"
+        alt="" class="w-full" />
+    </picture>
+  </article>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+  <div class="footer-content">
+    <div class="left-content">
+      <img src="./images/logo-white.svg" alt="Huddle Logo" />
+      <p class="white-text">
+        Lorem ipsum dolor sit amet,<br>
+        consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt<br>
+        ut labore et dolore magna aliqua.
+      </p>
+      <p class="white-text">Phone: +1-543-123-4567</p>
+      <p class="white-text">example@huddle.com</p>
+    </div>
 
-  Subscribe
+    
+    <div class="newsletter-section" style="text-align: right; margin-right: 20px; background-color: #01222b;">
+      <h3 style="color: white; font-weight: bold;">Newsletter</h3>
+      <p style="color: white;">
+        <div class="white-text">To receive tips on how to grow your community,</div>
+        <div class="white-text">sign up for our weekly newsletter.</div>
+        <div class="white-text">We'll never send you spam or pass on your email address.</div>
+      </p>
+      <div class="newsletter-form">
+        <input type="email" name="email" id="email" placeholder="example@huddle.com" required/>
+        <input type="submit" value="Subscribe" class="button3" /> 
+      </div>
+    </div>
+  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
+</footer>
+
+
+
+
 </body>
 </html>
